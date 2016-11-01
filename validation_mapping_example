@@ -1,0 +1,48 @@
+import re
+
+import re
+
+
+# n = int(input())
+#
+# word_list = []
+#
+# for i in range(n):
+#     word_list.append(input())
+#
+# word_list.sort()
+
+
+# Valid email addresses must follow these rules:
+#
+# It must have the username@websitename.extension format type.
+# The username can only contain letters, digits, dashes and underscores.
+# The website name can only have letters and digits.
+# The maximum length of the extension is 3
+
+def validaterules(address):
+    pattern = re.compile('^[a-z0-9A-Z-_]+[@]{1,1}[a-zA-Z0-9]+\.[A-Za-z]{0,3}$')
+    if pattern.match(address):
+        print("True")
+    else:
+        print("False")
+
+
+
+
+ # re.compile(r'(?=^[456])(?!.*(\d)(?:-?\1){3,})^(?:\d{4}-?){4}$')
+
+# Check proper contents/starting/count w/o hypen
+#normal = r'^([4-6])([0-9]){15}$'
+
+# Proper contents/separation/count with hypen
+
+#special = r'^([4-6][0-9]{3})-([0-9]{4})-([0-9]{4})-([0-9]{4})$'
+# Match any string w/o 4 non-unique chars
+
+#repeating = r'^(?:(.)(?!-*\1-*\1-*\1))*$'
+
+
+
+# word_list = [ x for x in word_list if validaterules(x)]
+# print(word_list)

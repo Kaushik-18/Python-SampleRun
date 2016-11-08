@@ -1,4 +1,4 @@
-from TestClass1 import TestPy1
+from classes.TestClass1 import TestPy1
 
 
 class TestPy2(TestPy1) :

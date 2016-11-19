@@ -13,7 +13,7 @@ import calendar
 blocked_days_map = {'Sunday': [],
                     'Monday': ['kaushik', 'aditya', 'gaurang', 'jay', 'swapnil', 'sagar', 'nitin'],
                     'Tuesday': ['durvesh', 'tanmay'],
-                    'Wednesday': ['gaurang', 'nitin'],
+                    'Wednesday': ['gaurang', 'nitin','swapnil'],
                     'Thursday': ['kaushik', 'durvesh', 'tanmay'],
                     'Friday': ['gaurang', 'nitin'],
                     'Saturday': []}

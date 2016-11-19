@@ -37,60 +37,54 @@ def shellSort(array):
 
 
 def mergesort(array):
-
-    if(len(array)>1):
-        midpoint = len(array)//2
+    if len(array) > 1 :
+        midpoint = len(array) // 2
         array_left = array[:midpoint]
         array_right = array[midpoint:]
 
         mergesort(array_left)
         mergesort(array_right)
 
-        i,j,k = 0,0,0
-        while i < len(array_left) and  j < len(array_right):
+        i, j, k = 0, 0, 0
+        while i < len(array_left) and j < len(array_right):
             if array_left[i] < array_right[j]:
                 array[k] = array_left[i]
-                k+=1
-                i+=1
-            elif array_left[i] > array_right[j] :
+                k += 1
+                i += 1
+            elif array_left[i] > array_right[j]:
                 array[k] = array_right[j]
-                k+=1
-                j+=1
+                k += 1
+                j += 1
         while j < len(array_right):
             array[k] = array_right[j]
-            k+=1
-            j+=1
+            k += 1
+            j += 1
         while i < len(array_left):
             array[k] = array_left[i]
-            k+=1
-            i+=1
+            k += 1
+            i += 1
 
 
-
-def quicksort(array,firstindex,lastindex):
+def quicksort(array, firstindex, lastindex):
     i = firstindex
     j = lastindex
-    pivot  = array[lastindex +firstindex//2]
-    while i <= j :
+    pivot = array[lastindex + firstindex // 2]
+    while i <= j:
         while array[i] < pivot:
-            i+=1
-        while array[j]>pivot:
-            j-=1
+            i += 1
+        while array[j] > pivot:
+            j -= 1
         if i <= j:
             temp = array[i]
             array[i] = array[j]
             array[j] = temp
-            i+=1
-            j-=1
-    print(i,j,firstindex,lastindex)
-    if(i < lastindex):
-        quicksort(array,i,lastindex)
-    if(firstindex < j):
-        quicksort(array,firstindex,j)
-
-
-
-
+            i += 1
+            j -= 1
+    print(i, j, firstindex, lastindex)
+    if (i < lastindex):
+        quicksort(array, i, lastindex)
+    if (firstindex < j):
+        quicksort(array, firstindex, j)
 
 
 testarray = [1, 0, 5, 4, 8, 100, 50, 77, 99]

@@ -5,7 +5,7 @@
 # Currently creating a hardcoded dictionary of days and names
 # TODO take input directly from console for names,blocked days ,time period
 # TODO current implementation needs 2-3 runs before near equality is achieved,
-
+# TODO block by specific dates
 import datetime
 import calendar
 
@@ -24,7 +24,7 @@ names_map = {'durvesh': 0, 'tanmay': 0, 'jay': 0, 'swapnil': 0, 'sagar': 0, 'nit
 
 names_list = list(names_map)
 
-days_range = 31
+days_range = 19
 
 time = datetime.datetime.now()
 time += datetime.timedelta(days=1)

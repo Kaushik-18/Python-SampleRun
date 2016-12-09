@@ -37,7 +37,7 @@ def shellSort(array):
 
 
 def mergesort(array):
-    if len(array) > 1 :
+    if len(array) > 1:
         midpoint = len(array) // 2
         array_left = array[:midpoint]
         array_right = array[midpoint:]
@@ -66,27 +66,27 @@ def mergesort(array):
 
 
 def quicksort(array, firstindex, lastindex):
-    i = firstindex
-    j = lastindex
-    pivot = array[lastindex + firstindex // 2]
-    while i <= j:
-        while array[i] < pivot:
-            i += 1
-        while array[j] > pivot:
-            j -= 1
-        if i <= j:
-            temp = array[i]
-            array[i] = array[j]
-            array[j] = temp
-            i += 1
-            j -= 1
-    print(i, j, firstindex, lastindex)
-    if (i < lastindex):
-        quicksort(array, i, lastindex)
-    if (firstindex < j):
-        quicksort(array, firstindex, j)
+    if firstindex < lastindex:
+        left_marker = firstindex
+        right_marker = lastindex
+        pivot = array[(lastindex + firstindex) // 2]
+        while left_marker <= right_marker:
+            while array[left_marker] < pivot:
+                left_marker += 1
+            while array[right_marker] > pivot:
+                right_marker -= 1
+            if left_marker <= right_marker:
+                temp = array[left_marker]
+                array[left_marker] = array[right_marker]
+                array[right_marker] = temp
+                left_marker += 1
+                right_marker -= 1
+                # if left_marker < lastindex:
+            quicksort(array, left_marker, lastindex)
+            # if firstindex < right_marker:
+            quicksort(array, firstindex, right_marker)
 
 
-testarray = [1, 0, 5, 4, 8, 100, 50, 77, 99]
-mergesort(testarray)
+testarray = [77, 2, 3, 43, 12, 5, 4, 8, 100, 50, 77, 99, 200, 98, 67]
+quicksort(testarray, 0, len(testarray) - 1)
 print(testarray)

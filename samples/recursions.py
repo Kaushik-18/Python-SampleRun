@@ -1,14 +1,18 @@
-import itertools
+converts_list = '0123456789ABCDEF'
 
-length = int(input())
-numberlist = []
 
-for i in range(length):
-    numberlist.insert(i, int(input()))
+def convert_numbers(mode, number):
+    if number < mode:
+        return converts_list[number]
+    else:
+        return convert_numbers(mode, number // mode) + converts_list[number % mode]
 
-print(*itertools.combinations(numberlist, 3))
 
-print(numberlist)
+def reverse_string(inputs):
+    if len(inputs) == 1:
+        return inputs
+    else:
+        return inputs[len(inputs) - 1] + reverse_string(inputs[:len(inputs) - 1])
 
 
 def permutate(wordsarray, length):

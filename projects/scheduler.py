@@ -10,21 +10,20 @@ import datetime
 import calendar
 
 # dictionary of unavailable members for each day of the week
-blocked_days_map = {'Sunday': [],
-                    'Monday': ['kaushik', 'aditya', 'gaurang', 'jay', 'swapnil', 'sagar', 'nitin'],
-                    'Tuesday': ['durvesh', 'tanmay'],
-                    'Wednesday': ['gaurang', 'nitin','swapnil'],
-                    'Thursday': ['kaushik', 'durvesh', 'tanmay'],
-                    'Friday': ['gaurang', 'nitin'],
-                    'Saturday': []}
+blocked_days_map = {'Sunday': ['nitin', 'gaurang'],
+                    'Monday': [],
+                    'Tuesday': [],
+                    'Wednesday': [],
+                    'Thursday': [],
+                    'Friday': [],
+                    'Saturday': ['nitin', 'gaurang']}
 
 # map to maintain number of turns for each person.
-names_map = {'durvesh': 0, 'tanmay': 0, 'jay': 0, 'swapnil': 0, 'sagar': 0, 'nitin': 0, 'gaurang': 0, 'aditya': 0,
-             'kaushik': 0}
+names_map = {'gaurang': 0, 'kaushik': 0, 'jay': 0, 'sagar': 0, 'nitin': 0, 'aditya': 0,}
 
 names_list = list(names_map)
-
-days_range = 19
+names_list.sort()
+days_range = 12
 
 time = datetime.datetime.now()
 time += datetime.timedelta(days=1)
@@ -34,8 +33,8 @@ name_list_length = len(names_map)
 for i in range(days_range):
     day = calendar.day_name[time.weekday()]
     valid_names = [name for name in names_list if name not in blocked_days_map.get(day)]
-# obtains a list of count of turns , take lowest 2 values from list and find the names from valid set corresponding to
-#  the two values
+    # obtains a list of count of turns , take lowest 2 values from list and find the names from valid set
+    # corresponding to the two values
     time_list = []
     for name in valid_names:
         time_list.append(names_map.get(name))

@@ -33,3 +33,16 @@ def calculate_step_ways(num_of_steps):
 
     return calculate_step_ways(num_of_steps - 1) + calculate_step_ways(num_of_steps - 2) + calculate_step_ways(
         num_of_steps - 3)
+
+
+
+
+
+
+
+
+
+
+
+
+

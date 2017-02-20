@@ -39,18 +39,10 @@ def dfs_paths_recursive(graph, start, end, path=None):
             yield from dfs_paths_recursive(graph, node, end, path + [node])
 
 
-def bfs_paths(graph, start, end):
-    queue = [(start, [start])]
-    while queue:
-        (vertex, path) = queue.pop(0)
-        for node in set(graph[vertex]) - set(path):
-            if node == end:
-                yield path + [node]
-            else:
-                queue.append((node, path + [node]))
 
 
-p = list(dfs_paths_recursive(mgraph, 'C', 'F'))
-m = list(dfs_paths_stack(mgraph, 'C', 'F'))
-n = list(bfs_paths(mgraph, 'C', 'F'))
-print(p, mgraph.keys(), "  ", n)
+
+
+
+
+

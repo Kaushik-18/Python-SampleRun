@@ -10,25 +10,26 @@ import datetime
 import calendar
 
 # dictionary of unavailable members for each day of the week
-blocked_days_map = {'Sunday': ['nitin', 'gaurang'],
-                    'Monday': [],
-                    'Tuesday': [],
-                    'Wednesday': [],
-                    'Thursday': [],
+blocked_days_map = {'Sunday': ['nitin'],
+                    'Monday': ['gaurang'],
+                    'Tuesday': ['nitin','sagar', 'jay', 'kaushik', 'gaurang', 'aditya'],
+                    'Wednesday': ['kaushik', 'gaurang', 'aditya','nitin'],
+                    'Thursday': ['aditya', 'nitin', 'jay','sagar'],
                     'Friday': [],
-                    'Saturday': ['nitin', 'gaurang']}
+                    'Saturday': []}
 
 # map to maintain number of turns for each person.
-names_map = {'gaurang': 0, 'kaushik': 0, 'jay': 0, 'sagar': 0, 'nitin': 0, 'aditya': 0,}
-
-names_list = list(names_map)
-names_list.sort()
-days_range = 12
-
+names_map = {'gaurang': 0, 'kaushik': 0, 'jay': 0, 'sagar': 0,
+             'nitin': 0, 'aditya': 0, 'swapnil': 0,'tanmay':0,'durvesh':0}
+names_list = sorted(list(names_map))
+# range of days
+days_range = int(input('enter day range '))
+# getting current date and updating by 1
 time = datetime.datetime.now()
 time += datetime.timedelta(days=1)
-
 name_list_length = len(names_map)
+# writing to a file
+s_file = open('schedule.txt', 'w')
 
 for i in range(days_range):
     day = calendar.day_name[time.weekday()]
@@ -57,8 +58,10 @@ for i in range(days_range):
     for name in name_set:
         names_map[name] += 1
 
-    print(time.date(), *name_set)
+    s_file.write('{0} {1} {2}'.format(time.date(), *name_set))
+    s_file.write('\n')
     time += datetime.timedelta(days=1)
 
+s_file.close()
 # print final count of to confirm
 print(names_map)

@@ -36,13 +36,3 @@ def calculate_step_ways(num_of_steps):
 
 
 
-
-
-
-
-
-
-
-
-
-

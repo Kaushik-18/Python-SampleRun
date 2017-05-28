@@ -15,7 +15,7 @@ blocked_days_map = {'Sunday': ['nitin'],
                     'Tuesday': ['nitin', 'sagar', 'jay', 'kaushik', 'gaurang', 'aditya'],
                     'Wednesday': ['kaushik', 'gaurang', 'aditya', 'nitin'],
                     'Thursday': ['aditya', 'nitin', 'jay', 'sagar'],
-                    'Friday': [],
+                    'Friday': ['tanmay'],
                     'Saturday': []}
 
 # map to maintain number of turns for each person.

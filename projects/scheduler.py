@@ -8,24 +8,28 @@
 # TODO block by specific dates
 import datetime
 import calendar
+import random
 
 # dictionary of unavailable members for each day of the week
 blocked_days_map = {'Sunday': ['nitin'],
-                    'Monday': ['gaurang'],
-                    'Tuesday': ['nitin', 'sagar', 'jay', 'kaushik', 'gaurang', 'aditya'],
-                    'Wednesday': ['kaushik', 'gaurang', 'aditya', 'nitin'],
-                    'Thursday': ['aditya', 'nitin', 'jay', 'sagar'],
-                    'Friday': ['tanmay'],
+                    'Monday': ['kaushik'],
+                    'Tuesday': [''],
+                    'Wednesday': ['nitin'],
+                    'Thursday': [],
+                    'Friday': ['nitin'],
                     'Saturday': []}
 
 # map to maintain number of turns for each person.
-names_map = {'gaurang': 0, 'kaushik': 0, 'jay': 0, 'sagar': 0,
-             'nitin': 0, 'aditya': 0, 'swapnil': 0, 'tanmay': 0, 'durvesh': 0}
-names_list = sorted(list(names_map))
+names_map = {'durvesh': 0, 'jay': 0, 'sagar': 0,
+             'nitin': 0, 'aditya': 0, 'kaushik':0,
+             'swapnil': 0, 'tanmay': 0}
+
+names_list = names_map.keys()
+random.shuffle(names_list)
 # range of days
 days_range = int(input('enter day range '))
 no_of_people = int(input('enter number of people '))
-# getting current date and updating by 1
+# getting current date and upsdating by 1
 time = datetime.datetime.now()
 time += datetime.timedelta(days=1)
 name_list_length = len(names_map)
@@ -47,8 +51,8 @@ for i in range(days_range):
     name_set = []
 
     for count in count_list:
-        for k, v in names_map.items():
-            if v == count and k in valid_names:
+        for k in names_list:
+            if names_map[k] == count and k in valid_names:
                 if k not in name_set:
                     name_set.append(k)
                     break

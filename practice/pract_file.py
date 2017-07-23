@@ -1,6 +1,5 @@
 from collections import Counter
 
-
 def find_longest(inputs, word_dict):
     input_count = Counter(inputs)
     largest_word = []

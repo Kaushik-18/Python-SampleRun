@@ -81,4 +81,112 @@ def find_largest_by_three(nums_array):
     return int(final_number)
 
 
-print find_largest_by_three([3, 1, 4, 1])
+# Q 3 Bomb_Baby !
+
+def validate(M, F):
+    m = int(M)
+    f = int(F)
+    counter = 0
+    while min(m, f) != 1:
+        if m == f:
+            return "impossible"
+        if m > f:
+            diff = m // f
+            m %= f
+            counter += diff
+        else:
+            diff = f // m
+            f = f % m
+            counter += diff
+
+    counter = counter + f + m - 2
+    return str(counter)
+
+
+# print(validate("4", "7"))
+#  Q 3B
+# naive solution :- loop through and xor all previous ,problem will take a very long time o(n^2)
+# we observe that if if we take xor over a range 0-a, there is a cycle corresponding to [a,0,a+1,1]
+# so for xor over rage [a,b] , we use xor associative and commutative property
+# eg:-   n  a^a+1^....^b   f(b)  = 1^2^3...^(a-1)+(a^ ... ^b)  which can be written as n = f(a-1) ^ f()b
+def xor_for_ranges(x, y):
+    def helper(x):
+        check_cycle_array = [x, 1, x + 1, 0]
+        cycle_pos = x % 4
+        return check_cycle_array[cycle_pos]
+
+    return helper(x - 1) ^ helper(y)
+
+
+def check_sum(start, length):
+    sub_length = length
+    output = 0
+    while sub_length > 0:
+        output ^= xor_for_ranges(start, start + sub_length - 1)
+        start = start + length
+        sub_length -= 1
+    return output
+
+
+def test_xor(lengths):
+    output = 0
+    for i in range(lengths):
+        output = output ^ i
+        print(output)
+
+
+# print(check_sum(0, 3))  # 032
+
+# Q 3.3
+
+def dp_answer(n, current_height, d):
+    # at any step you have 2 options. The first option is to increase the height of the current step
+    # you are on by adding one more brick, i.e., rec(left-1, curr+1) and the second option
+    # is to create a new step whose height should be greater than curr ,i.e., rec(left-curr-1, curr+1)
+    # ( you created a step of height curr+1 ). Now, left can never be negative ,
+    #  thus if left<0 then return 0. And when left is 0 that means, we have created
+    # a valid staircase,thus if left==0 then return 1.
+    # This case: if dp[left][curr] !=-1 is just for memoization.
+    # Now, rec( 212-1, 1 ) means a step of height 1 is created and it is the current step.
+    # And for final answer 1 is subtracted because any valid staircase should contain at least 2 steps so,
+    #  subtracting 1 for single step staircase.
+    if n < 0:
+        return 0
+    if n == 0:
+        return 1
+    if d[n][current_height] != -1:
+        return d[n][current_height]
+
+    d[n][current_height] = dp_answer(n - (current_height + 1), current_height + 1, d) + \
+                           dp_answer(n - 1, current_height + 1, d)
+
+    return d[n][current_height]
+
+
+def answer(n):
+    ways = [[-1] * (n + 1) for i in range(n + 1)]
+    return dp_answer(n - 1, 1, ways) - 1
+
+
+# print(answer(200))
+import itertools
+
+
+def comboall(num_buns, num_required):
+    r = []
+
+    # Applying pegion rule
+    f = list(itertools.combinations(range(num_buns), num_required))
+    total = len(f) * num_required
+    repeat_times = num_buns - num_required + 1
+    f1 = list(itertools.combinations(range(num_buns), repeat_times))
+    for i in range(num_buns):
+        r.append([])
+
+    for i in range(total // repeat_times):
+        for j in f1[i]:
+            r[j].append(i)
+
+    return r
+
+print(comboall(5,3))

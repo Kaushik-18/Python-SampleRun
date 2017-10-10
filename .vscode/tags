@@ -1,0 +1,201 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BinaryTree	../data-structures-algos/binary_tree.py	/^class BinaryTree:$/;"	kind:class	line:8
+Graph	../projects/full_graphs.py	/^class Graph:$/;"	kind:class	line:5
+Heaps	../data-structures-algos/heaps.py	/^class Heaps :$/;"	kind:class	line:1
+MAX_VALUE	../data-structures-algos/binary_tree.py	/^    MAX_VALUE = 40000$/;"	kind:variable	line:81
+MIN_VALUE	../data-structures-algos/binary_tree.py	/^    MIN_VALUE = -40000$/;"	kind:variable	line:82
+MagicDictionary	../practice/leetcode_problems/leetcode_49.py	/^class MagicDictionary(object):$/;"	kind:class	line:57
+MapSum	../practice/leetcode_problems/leetcode_50.py	/^class MapSum :$/;"	kind:class	line:47
+Node	../data-structures-algos/binary_tree.py	/^class Node:$/;"	kind:class	line:1
+Node	../practice/leetcode_problems/leetcode_52.py	/^class Node :$/;"	kind:class	line:11
+Quick_Union_Find	../data-structures-algos/union-find.py	/^class Quick_Union_Find:$/;"	kind:class	line:1
+TreeNode	../practice/leetcode_problems/leetcode_50.py	/^class TreeNode :$/;"	kind:class	line:35
+TreeNode	../practice/leetcode_problems/leetcode_weekly.py	/^class TreeNode :$/;"	kind:class	line:92
+TreeNode	../practice/leetcode_problems/stacks.py	/^class TreeNode():$/;"	kind:class	line:20
+TriNode	../practice/tries/replace_word.py	/^class TriNode:$/;"	kind:class	line:5
+Trie	../practice/tries/add_search_word.py	/^class Trie :$/;"	kind:class	line:4
+Trie	../practice/tries/game_board_search.py	/^class Trie :$/;"	kind:class	line:16
+Trie	../practice/tries/tries.py	/^class Trie :$/;"	kind:class	line:9
+TrieNode	../practice/tries/tries.py	/^class TrieNode :$/;"	kind:class	line:4
+WordDict	../practice/tries/add_search_word.py	/^class WordDict() :$/;"	kind:class	line:9
+WordReplace	../practice/tries/replace_word.py	/^class WordReplace :$/;"	kind:class	line:10
+__init__	../data-structures-algos/binary_tree.py	/^    def __init__(self, value):$/;"	kind:member	line:2
+__init__	../data-structures-algos/heaps.py	/^    def __init__(self):$/;"	kind:member	line:2
+__init__	../data-structures-algos/union-find.py	/^    def __init__(self , n):$/;"	kind:member	line:2
+__init__	../practice/leetcode_problems/leetcode_49.py	/^    def __init__(self):$/;"	kind:member	line:58
+__init__	../practice/leetcode_problems/leetcode_50.py	/^    def __init__(self) :$/;"	kind:member	line:48
+__init__	../practice/leetcode_problems/leetcode_50.py	/^    def __init__(self,val,count=0) :$/;"	kind:member	line:36
+__init__	../practice/leetcode_problems/leetcode_52.py	/^    def __init__(self ,value):$/;"	kind:member	line:12
+__init__	../practice/leetcode_problems/leetcode_weekly.py	/^    def __init__(self,val):$/;"	kind:member	line:93
+__init__	../practice/leetcode_problems/stacks.py	/^    def __init__(self,value):$/;"	kind:member	line:21
+__init__	../practice/tries/game_board_search.py	/^    def __init__(self):$/;"	kind:member	line:17
+__init__	../practice/tries/replace_word.py	/^    def __init__(self) :$/;"	kind:member	line:11
+__init__	../practice/tries/replace_word.py	/^    def __init__(self) :$/;"	kind:member	line:6
+__init__	../practice/tries/tries.py	/^    def __init__(self) :$/;"	kind:member	line:10
+__init__	../practice/tries/tries.py	/^    def __init__(self):$/;"	kind:member	line:5
+__init__	../projects/full_graphs.py	/^    def __init__(self):$/;"	kind:member	line:6
+__init__.py	../projects/__init__.py	1;"	kind:file	line:1
+add	../practice/tries/game_board_search.py	/^    def add(self , word):$/;"	kind:member	line:21
+add	../practice/tries/replace_word.py	/^    def add(self , word):$/;"	kind:member	line:14
+addWord	../practice/tries/tries.py	/^    def addWord(self ,word) :$/;"	kind:member	line:13
+add_search_word.py	../practice/tries/add_search_word.py	1;"	kind:file	line:1
+add_vertex	../projects/full_graphs.py	/^    def add_vertex(self, vertex, edge):$/;"	kind:member	line:9
+adjust_heap	../data-structures-algos/heaps.py	/^    def adjust_heap(self , index) :$/;"	kind:member	line:10
+adjust_heap_down	../data-structures-algos/heaps.py	/^    def adjust_heap_down(self,index):$/;"	kind:member	line:31
+answer	../practice/ultimate_challenge_problems.py	/^def answer(n):$/;"	kind:function	line:166
+array_problems.py	../practice/leetcode_problems/array_problems.py	1;"	kind:file	line:1
+arrays_intersection	../practice/leetcode_problems/array_problems.py	/^def arrays_intersection(arr1 ,arr2):$/;"	kind:function	line:34
+binary_tree.py	../data-structures-algos/binary_tree.py	1;"	kind:file	line:1
+blocked_days_map	../projects/scheduler.py	/^blocked_days_map = {'Sunday': ['tanmay'],$/;"	kind:variable	line:14
+buildDict	../practice/leetcode_problems/leetcode_49.py	/^    def buildDict(self, dict):$/;"	kind:member	line:64
+c	../practice/tries/add_search_word.py	/^            c  = word[i]$/;"	kind:variable	line:24
+checkBST	../data-structures-algos/binary_tree.py	/^    def checkBST(node, min, max):$/;"	kind:member	line:85
+checkTwoSumBinaryTree	../practice/leetcode_problems/leetcode_weekly.py	/^def checkTwoSumBinaryTree(target,root):$/;"	kind:function	line:98
+checkValidParenth	../practice/leetcode_problems/leetcode_50.py	/^def checkValidParenth(evals):$/;"	kind:function	line:86
+check_board_full	../projects/tic-tac-toe.py	/^def check_board_full():$/;"	kind:function	line:55
+check_common_ancestor	../data-structures-algos/binary_tree.py	/^    def check_common_ancestor(root,v1,v2):$/;"	kind:member	line:95
+check_ip	../practice/leetcode_problems/leetcode_weekly.py	/^def check_ip(ipval) :$/;"	kind:function	line:17
+check_mirror_image	../practice/leetcode_problems/stacks.py	/^def check_mirror_image(root):$/;"	kind:function	line:26
+check_palindrome	../practice/leetcode_problems/leetcode_50.py	/^def check_palindrome(s):$/;"	kind:function	line:4
+check_sum	../practice/ultimate_challenge_problems.py	/^def check_sum(start, length):$/;"	kind:function	line:121
+check_valid_position	../projects/tic-tac-toe.py	/^def check_valid_position(board, positon):$/;"	kind:function	line:15
+check_win	../projects/tic-tac-toe.py	/^def check_win(board, marker):$/;"	kind:function	line:43
+comboall	../practice/ultimate_challenge_problems.py	/^def comboall(num_buns, num_required):$/;"	kind:function	line:175
+comp_root	../data-structures-algos/union-find.py	/^    def comp_root(self,p):$/;"	kind:member	line:52
+convert_numbers	../practice/recursions.py	/^def convert_numbers(mode, number):$/;"	kind:function	line:4
+convert_numbers	../practice/ultimate_challenge_problems.py	/^def convert_numbers(mode, number):$/;"	kind:function	line:7
+converts_list	../practice/recursions.py	/^converts_list = '0123456789ABCDEF'$/;"	kind:variable	line:1
+count_list	../projects/scheduler.py	/^    count_list = time_list[:no_of_people]$/;"	kind:variable	line:50
+create_marker	../projects/tic-tac-toe.py	/^def create_marker(marker, game_board, position):$/;"	kind:function	line:39
+cutOffTrees	../practice/leetcode_problems/leetcode_49.py	/^def cutOffTrees(forest) :$/;"	kind:function	line:37
+day	../projects/scheduler.py	/^    day = calendar.day_name[time.weekday()]$/;"	kind:variable	line:40
+days_range	../projects/scheduler.py	/^days_range = int(input('enter day range '))$/;"	kind:variable	line:30
+delete_earn	../practice/leetcode_problems/array_problems.py	/^def delete_earn(elements):$/;"	kind:function	line:69
+delete_node	../data-structures-algos/binary_tree.py	/^    def delete_node(self, node, value):$/;"	kind:member	line:27
+dfs_paths_recursive	../data-structures-algos/graphs.py	/^def dfs_paths_recursive(graph, start, end, path=None):$/;"	kind:function	line:32
+dfs_paths_stack	../data-structures-algos/graphs.py	/^def dfs_paths_stack(graph, start, end):$/;"	kind:function	line:21
+dfs_traversal_rec	../data-structures-algos/graphs.py	/^def dfs_traversal_rec(graph, start, visited=None):$/;"	kind:function	line:10
+display_board	../projects/tic-tac-toe.py	/^def display_board(game_board):$/;"	kind:function	line:6
+distinctIslands	../practice/leetcode_problems/leetcode_53.py	/^def distinctIslands(grid):$/;"	kind:function	line:33
+docker_kubernates.py	../projects/docker_kubernates.py	1;"	kind:file	line:1
+dp_answer	../practice/ultimate_challenge_problems.py	/^def dp_answer(n, current_height, d):$/;"	kind:function	line:142
+exclusive_time	../practice/leetcode_problems/stacks.py	/^def exclusive_time(n , logs):$/;"	kind:function	line:2
+findTwoSum	../practice/leetcode_problems/leetcode_weekly.py	/^def findTwoSum(target ,values):$/;"	kind:function	line:65
+findTwoSumSorted	../practice/leetcode_problems/leetcode_weekly.py	/^def findTwoSumSorted(target , values) :$/;"	kind:function	line:77
+findUniPath	../practice/leetcode_problems/leetcode_52.py	/^def findUniPath(root) :$/;"	kind:function	line:17
+findWordRoot	../practice/tries/replace_word.py	/^    def findWordRoot(self, word):$/;"	kind:member	line:20
+find_closest	../practice/leetcode_problems/array_problems.py	/^def find_closest(v_list,value):$/;"	kind:function	line:15
+find_largest_by_three	../practice/ultimate_challenge_problems.py	/^def find_largest_by_three(nums_array):$/;"	kind:function	line:44
+find_left_height	../data-structures-algos/binary_tree.py	/^    def find_left_height(node):$/;"	kind:member	line:50
+find_longest_sequence	../practice/leetcode_problems/leetcode.py	/^def find_longest_sequence(A, B):$/;"	kind:function	line:74
+find_majority_element	../practice/leetcode_problems/leetcode_weekly.py	/^def find_majority_element(values) :$/;"	kind:function	line:50
+find_max_collection2	../practice/leetcode_problems/leetcode_weekly.py	/^def find_max_collection2(n , k) :$/;"	kind:function	line:6
+find_max_height	../data-structures-algos/binary_tree.py	/^    def find_max_height(node):$/;"	kind:member	line:72
+find_min	../data-structures-algos/binary_tree.py	/^    def find_min(node):$/;"	kind:member	line:66
+find_min_child	../data-structures-algos/heaps.py	/^    def find_min_child(self,index):$/;"	kind:member	line:23
+find_min_repeats	../practice/leetcode_problems/leetcode_52.py	/^def find_min_repeats(A,B) :$/;"	kind:function	line:2
+find_number_longest_increasing_sequences	../practice/leetcode_problems/leetcode_49.py	/^def find_number_longest_increasing_sequences(nums):$/;"	kind:function	line:12
+find_paths	../practice/knights_problem.py	/^def find_paths(start_pos, end_pos):$/;"	kind:function	line:25
+find_random_end	../practice/ultimate_challenge_problems.py	/^def find_random_end(n, b):$/;"	kind:function	line:17
+find_right_height	../data-structures-algos/binary_tree.py	/^    def find_right_height(node):$/;"	kind:member	line:58
+find_root	../data-structures-algos/union-find.py	/^    def find_root(self , value):$/;"	kind:member	line:23
+find_unique_in_list	../practice/leetcode_problems/leetcode.py	/^def find_unique_in_list(list1, list2):$/;"	kind:function	line:89
+full_graphs.py	../projects/full_graphs.py	1;"	kind:file	line:1
+g	../projects/full_graphs.py	/^g = Graph()$/;"	kind:variable	line:52
+game_board	../projects/tic-tac-toe.py	/^game_board = [' '] * 10$/;"	kind:variable	line:2
+game_board_search.py	../practice/tries/game_board_search.py	1;"	kind:file	line:1
+game_state	../projects/tic-tac-toe.py	/^game_state = True$/;"	kind:variable	line:3
+get_all_valid_moves	../practice/knights_problem.py	/^def get_all_valid_moves(init_pos):$/;"	kind:function	line:10
+get_player_choice	../projects/tic-tac-toe.py	/^def get_player_choice(marker, game_board):$/;"	kind:function	line:61
+get_user_input	../projects/tic-tac-toe.py	/^def get_user_input(game_board):$/;"	kind:function	line:22
+graphs.py	../data-structures-algos/graphs.py	1;"	kind:file	line:1
+heaps.py	../data-structures-algos/heaps.py	1;"	kind:file	line:1
+helper	../practice/ultimate_challenge_problems.py	/^    def helper(x):$/;"	kind:function	line:113
+host_list	../projects/latency.py	/^host_list = {"54.191.63.252": "us-west-2", "54.243.255.254": "us-east-1", "52.222.9.163": "us-gov-west-1",$/;"	kind:variable	line:15
+inorder	../data-structures-algos/binary_tree.py	/^    def inorder(self, node):$/;"	kind:member	line:21
+insert	../data-structures-algos/binary_tree.py	/^    def insert(self, value, node):$/;"	kind:member	line:9
+insert	../data-structures-algos/heaps.py	/^    def insert(self,value):$/;"	kind:member	line:18
+insert	../practice/leetcode_problems/leetcode_50.py	/^    def insert(self,key ,val) :$/;"	kind:member	line:51
+insertionSort	../data-structures-algos/sorts.py	/^def insertionSort(array):$/;"	kind:function	line:2
+is_valid_palindrome	../practice/leetcode_problems/leetcode_50.py	/^    def is_valid_palindrome(check_string,start,end):$/;"	kind:function	line:6
+knights_problem.py	../practice/knights_problem.py	1;"	kind:file	line:1
+latency.py	../projects/latency.py	1;"	kind:file	line:1
+leetcode.py	../practice/leetcode_problems/leetcode.py	1;"	kind:file	line:1
+leetcode_49.py	../practice/leetcode_problems/leetcode_49.py	1;"	kind:file	line:1
+leetcode_50.py	../practice/leetcode_problems/leetcode_50.py	1;"	kind:file	line:1
+leetcode_51.py	../practice/leetcode_problems/leetcode_51.py	1;"	kind:file	line:1
+leetcode_52.py	../practice/leetcode_problems/leetcode_52.py	1;"	kind:file	line:1
+leetcode_53.py	../practice/leetcode_problems/leetcode_53.py	1;"	kind:file	line:1
+leetcode_weekly.py	../practice/leetcode_problems/leetcode_weekly.py	1;"	kind:file	line:1
+longest_subsequence_cont_length	../practice/leetcode_problems/leetcode_49.py	/^def longest_subsequence_cont_length(nums) :$/;"	kind:function	line:1
+map_to_coords	../practice/knights_problem.py	/^def map_to_coords(pos):$/;"	kind:function	line:4
+maxAreaIsland	../practice/leetcode_problems/leetcode_53.py	/^def maxAreaIsland(grid) :$/;"	kind:function	line:8
+merge_intervals	../practice/leetcode_problems/leetcode.py	/^def merge_intervals(interval_list):$/;"	kind:function	line:52
+mergesort	../data-structures-algos/sorts.py	/^def mergesort(array):$/;"	kind:function	line:39
+mgraph	../data-structures-algos/graphs.py	/^mgraph = {'A': ['B', 'C'],$/;"	kind:variable	line:1
+name_list_length	../projects/scheduler.py	/^name_list_length = len(names_map)$/;"	kind:variable	line:35
+name_set	../projects/scheduler.py	/^    name_set = []$/;"	kind:variable	line:51
+names_list	../projects/scheduler.py	/^names_list = list(names_map)$/;"	kind:variable	line:27
+names_map	../projects/scheduler.py	/^names_map = {'durvesh': 0, 'jay': 0, 'sagar': 0,$/;"	kind:variable	line:23
+nextClosestTime	../practice/leetcode_problems/leetcode_51.py	/^def nextClosestTime(time):$/;"	kind:function	line:16
+no_of_people	../projects/scheduler.py	/^no_of_people = int(input('enter number of people '))$/;"	kind:variable	line:31
+node	../practice/tries/add_search_word.py	/^            node =  node.child[w]$/;"	kind:variable	line:16
+node	../practice/tries/add_search_word.py	/^            node = node.child$/;"	kind:variable	line:33
+node	../practice/tries/add_search_word.py	/^        node =  self.root$/;"	kind:variable	line:14
+op_sentence	../practice/tries/replace_word.py	/^op_sentence = ''$/;"	kind:variable	line:38
+output	../projects/scheduler.py	/^    output = str(time.date()) + " " + ' '.join(name_set)$/;"	kind:variable	line:63
+permutate	../practice/recursions.py	/^def permutate(wordsarray, length):$/;"	kind:function	line:18
+play_game	../projects/tic-tac-toe.py	/^def play_game():$/;"	kind:function	line:74
+points_calculator	../practice/leetcode_problems/leetcode_51.py	/^def points_calculator(scores):$/;"	kind:function	line:2
+pop_min	../data-structures-algos/heaps.py	/^    def pop_min(self):$/;"	kind:member	line:40
+print_spiral	../practice/leetcode_problems/leetcode.py	/^def print_spiral(darray):$/;"	kind:function	line:5
+process_iterate	../projects/latency.py	/^def process_iterate(values_dict):$/;"	kind:function	line:22
+quicksort	../data-structures-algos/sorts.py	/^def quicksort(array, firstindex, lastindex):$/;"	kind:function	line:68
+recursions.py	../practice/recursions.py	1;"	kind:file	line:1
+remove_all_given_vals	../practice/leetcode_problems/array_problems.py	/^def remove_all_given_vals(val_list,val):$/;"	kind:function	line:3
+remove_target_elements	../practice/leetcode_problems/leetcode_weekly.py	/^def remove_target_elements(values ,target):$/;"	kind:function	line:39
+replace_word.py	../practice/tries/replace_word.py	1;"	kind:file	line:1
+results	../projects/latency.py	/^results = process_iterate(host_list)$/;"	kind:variable	line:39
+rev	../practice/tries/replace_word.py	/^rev =  WordReplace()$/;"	kind:variable	line:33
+reverseVowels	../practice/leetcode_problems/array_problems.py	/^def reverseVowels(value):$/;"	kind:function	line:50
+reverse_polish	../practice/leetcode_problems/stacks.py	/^def reverse_polish(tokens):$/;"	kind:function	line:48
+reverse_string	../practice/recursions.py	/^def reverse_string(inputs):$/;"	kind:function	line:11
+root	../data-structures-algos/binary_tree.py	/^root = Node(40)$/;"	kind:variable	line:109
+root	../practice/tries/replace_word.py	/^    root = rev.findWordRoot(word)$/;"	kind:variable	line:40
+root_dictionary	../practice/tries/replace_word.py	/^root_dictionary = []$/;"	kind:variable	line:34
+s_file	../projects/scheduler.py	/^s_file = open('schedule.txt', 'w')$/;"	kind:variable	line:37
+scan_board	../practice/tries/game_board_search.py	/^def scan_board(x, y , board , accumlator , node , result ,seen_vals) :$/;"	kind:function	line:38
+scheduler.py	../projects/scheduler.py	1;"	kind:file	line:1
+search	../practice/leetcode_problems/leetcode_49.py	/^    def search(self, word):$/;"	kind:member	line:72
+search	../practice/tries/tries.py	/^    def search(self , word) :$/;"	kind:member	line:19
+search_board	../practice/tries/game_board_search.py	/^def search_board(word_list , board) :$/;"	kind:function	line:27
+search_number_backs	../practice/leetcode_problems/array_problems.py	/^    def search_number_backs(value) :$/;"	kind:function	line:81
+search_prefix	../practice/leetcode_problems/leetcode_50.py	/^def search_prefix(node) :$/;"	kind:function	line:41
+shellSort	../data-structures-algos/sorts.py	/^def shellSort(array):$/;"	kind:function	line:17
+shortest_paths	../projects/full_graphs.py	/^    def shortest_paths(self, source, destination):$/;"	kind:member	line:12
+simplify_path	../practice/leetcode_problems/stacks.py	/^def simplify_path(path) :$/;"	kind:function	line:68
+sorted_results	../projects/latency.py	/^sorted_results = sorted(results.items(), key=lambda x: x[1])$/;"	kind:variable	line:40
+sorts.py	../data-structures-algos/sorts.py	1;"	kind:file	line:1
+stacks.py	../practice/leetcode_problems/stacks.py	1;"	kind:file	line:1
+starts_with	../practice/tries/tries.py	/^    def starts_with(self,prefix) :$/;"	kind:member	line:27
+sum	../practice/leetcode_problems/leetcode_50.py	/^    def sum(self,prefix):$/;"	kind:member	line:60
+test_xor	../practice/ultimate_challenge_problems.py	/^def test_xor(lengths):$/;"	kind:function	line:131
+testarray	../data-structures-algos/sorts.py	/^testarray = [77, 2, 3, 43, 12, 5, 4, 8, 100, 50, 77, 99, 200, 98, 67]$/;"	kind:variable	line:90
+tic-tac-toe.py	../projects/tic-tac-toe.py	1;"	kind:file	line:1
+time	../projects/scheduler.py	/^time = datetime.datetime.now()$/;"	kind:variable	line:33
+time_list	../projects/scheduler.py	/^    time_list = []$/;"	kind:variable	line:44
+time_list	../projects/scheduler.py	/^    time_list = sorted(time_list)$/;"	kind:variable	line:48
+traverse	../practice/leetcode_problems/leetcode_52.py	/^    def traverse(max_path , root) :$/;"	kind:function	line:20
+tree	../data-structures-algos/binary_tree.py	/^tree = BinaryTree()$/;"	kind:variable	line:110
+tries.py	../practice/tries/tries.py	1;"	kind:file	line:1
+ultimate_challenge_problems.py	../practice/ultimate_challenge_problems.py	1;"	kind:file	line:1
+union	../data-structures-algos/union-find.py	/^    def union(self,p1,p2):$/;"	kind:member	line:41
+union-find.py	../data-structures-algos/union-find.py	1;"	kind:file	line:1
+valid_names	../projects/scheduler.py	/^    valid_names = [name for name in names_list if name not in blocked_days_map.get(day)]$/;"	kind:variable	line:41
+validate	../practice/ultimate_challenge_problems.py	/^def validate(M, F):$/;"	kind:function	line:86
+xor_for_ranges	../practice/ultimate_challenge_problems.py	/^def xor_for_ranges(x, y):$/;"	kind:function	line:112

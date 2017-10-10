@@ -89,9 +89,22 @@ class BinaryTree:
             return False
         if node.value > max:
             return False
-        return BinaryTree.checkBST(node.left_node, min, node.value) and BinaryTree.checkBST(node.right_node, node.value,
-                                                                                            max)
+        return BinaryTree.checkBST(node.left_node, min, node.value) and BinaryTree.checkBST(node.right_node, node.value,max)
 
+    @staticmethod    
+    def check_common_ancestor(root,v1,v2):
+        if root is None :
+            return None
+        if root.value == v1 or root.value == v2 :
+            return root
+        left_r  = check_common_ancestor(root.left_node,v1,v2)
+        right_r = check_common_ancestor(root.right_node,v1,v2)
+        if left_r != None and right_r != None:
+            return root
+        if left_r != None:
+            return left_r
+        else : 
+            return right_r
 
 root = Node(40)
 tree = BinaryTree()

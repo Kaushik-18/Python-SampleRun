@@ -1,9 +1,10 @@
 # used in applications like ip tables,auto complete
 # using defalutdict here so that a default value is returned
-
+import collections
 class TrieNode :
-    self.list  = collections.defalutdict(TrieNode)
-    self.isWord = False
+    def __init__(self):
+        self.list  = collections.defaultdict(TrieNode)
+        self.isWord = False
 
 class Trie :
     def __init__(self) :

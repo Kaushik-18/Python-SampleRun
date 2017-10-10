@@ -11,20 +11,20 @@ import calendar
 import random
 
 # dictionary of unavailable members for each day of the week
-blocked_days_map = {'Sunday': ['nitin'],
-                    'Monday': ['kaushik'],
-                    'Tuesday': [''],
-                    'Wednesday': ['nitin'],
-                    'Thursday': [],
-                    'Friday': ['nitin'],
-                    'Saturday': []}
+blocked_days_map = {'Sunday': ['tanmay'],
+                    'Monday': ['swapnil'],
+                    'Tuesday': ['aditya','sagar','jay','swapnil'],
+                    'Wednesday': ['sagar','jay','swapnil'],
+                    'Thursday': ['kaushik','aditya','swapnil'],
+                    'Friday': ['aditya','sagar','kaushik','jay'],
+                    'Saturday': ['tanmay']}
 
 # map to maintain number of turns for each person.
 names_map = {'durvesh': 0, 'jay': 0, 'sagar': 0,
-             'nitin': 0, 'aditya': 0, 'kaushik':0,
-             'swapnil': 0, 'tanmay': 0}
+             'nikhil': 0, 'aditya': 0, 'kaushik':0,
+             'swapnil': 0, 'tanmay': 0 }
 
-names_list = names_map.keys()
+names_list = list(names_map)
 random.shuffle(names_list)
 # range of days
 days_range = int(input('enter day range '))

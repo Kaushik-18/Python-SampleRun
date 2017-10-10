@@ -23,6 +23,7 @@ class WordDict() :
         for i  in len(word) :
             c  = word[i]
             if c == '.' :
+                #since it can be any word
                 for k in node.child :
                     if(search_dfs(node.child[k] , word[i+1:])):
                         return True
